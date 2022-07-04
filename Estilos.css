@@ -1,0 +1,53 @@
+h1
+{
+    color: black;
+    font-style: italic;
+    font-size: 40px;
+    margin: 10px 40px 10px 0px;
+    display: inline-block;
+    background: burlywood;
+    padding: 10px 20px;
+    
+}
+body
+{
+    background-color:#6C6276;
+
+}
+a
+{
+    color: black;
+    font-size: 40px;
+    margin: 10px 90px 10px 0px;
+    display: inline-block;
+    background: burlywood;
+    padding: 10px 20px;
+}
+.estiloa
+{
+    color:ghostwhite;
+    font-style: italic;
+    font-size: 30px;
+    margin: 10px 20px 10px 0px;
+    display: inline-block;
+    background:#563609;
+    padding: 10px 20px;
+   
+
+}
+p
+{
+    color: ghostwhite;
+    font-size: 30px;
+    font-style: italic;
+    margin: 10px 20px 10px 0px;
+    display: inline-block;
+    background:#563609;
+    padding: 10px 20px;
+}
+#estilob
+{
+    color: #F97100;
+    font-style: italic;
+
+}

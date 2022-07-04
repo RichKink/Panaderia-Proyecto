@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <hr>
+    <a href="Paginaprincipal.html">Inicio</a>
+    <a href="Catalogo.html">Catalogo</a>
+    <a href="Precios.html">Precios</a>
+    <a href="Chefs.html">Chefs</a>
+    <a href="Nosotros.html">Nosotros</a>
+    <a href="Videos.html">Videos</a>
+    <a href="Contacto.html">Pedidos</a>
+    
+    <hr>
+    
+     <center><h1>Ingrese sus datos</h1></center> <br>
+     <form action=""> 
+         <p>   
+         Nombre: <input type="text" id="txtnombre"> 
+         Apellido:<input type="text" id="txtapellido"> <br>
+         Departamento:<input type="text" id="txtdepa"> 
+         Ciudad:<input type="text" id="txtciudad">  <br>
+         Telefono:<input type="text" id="txtfono">
+         Email<input type="text" id="txtemail"> <br>
+         <input type="button" id = "obtnGuardar" value="Guardar">
+        </p>
+    </form>
+         <script>
+             var Guardar = document.getElementById("obtnGuardar");
+             obtnGuardar.onclick = function(){
+                 alert("Datos Guardados prosiga con el pedido")
+             }
+         </script>
+       <center><h1>Pedidos aqui ⬇️</h1></center>
+       <form action="">
+       <p> Clase de Pan: <input type="text" > <br>
+        Promocio o Unidad:<input type="text" > <br>
+        Efectivo o Debito: <input type="text" > <br>
+        Precio Total Pan: <input type="number" id="txtvalora"  step="0" value="0"><br>
+        Precio Toral Pan: <input type="number"id="txtvalorb"  step="0" value="0"> <br>
+        <input type="button" id="btnsumar" value="Total"> <br>
+         a Pagar en Bolivianos: <input type="text" id="txtresultado" value="0">
+        </p>
+       </form>
+        <script>
+            var ovalor1 = document.getElementById("txtvalora");
+            var ivalor2 = document.getElementById("txtvalorb");
+            var otResultado = document.getElementById("txtresultado");
+            var btnsumar = document.getElementById("btnsumar");
+            btnsumar.onclick = function(){
+                var a = parseFloat(ovalor1.value);
+                var b = parseFloat(ivalor2.value);
+                var c = a+b;
+                otResultado.value = c ; 
+
+            }
+        </script>
+
+      <center><h1>Pagar Tarjeta Credito o Debito</h1></center>
+      <p>
+        Numero de tarjeta : <input type="text"> <br>
+        Caduca : <input type="text"> <br>
+        CVV : <input type="text"> <br>
+        Nombre : <input type="text"> <br>
+        Apellido : <input type="text">
+        <input type="button" id = "btnGuardar" value="Guardar y pedir">
+      </p>
+       <br>
+     <script>
+         var Guardarypedir = document.getElementById("btnGuardar");
+         btnGuardar.onclick=function(){
+             alert("Compra exitosa ! en 50m estara su pedido")
+         }
+     </script>
+</body>
+</html>
